@@ -21,11 +21,11 @@ int main(void)
 	last_digit = n % 10;
 
 	if (last_digit > 5)
-		printf("%s %i is %i, and is greater than 5\n", str, n, last_digit);
+		printf("%s %i is %i and is greater than 5\n", str, n, last_digit);
 	if (last_digit == 0)
-		printf("%s %i is %i, and is equal to zero\n", str, n, last_digit);
+		printf("%s %i is %i and is equal to zero\n", str, n, last_digit);
 	if (last_digit < 6)
-		printf("%s %i is %i, and is less than 6 and not 0", str, n, last_digit);
+		printf("%s %i is %i and is less than 6 and not 0", str, n, last_digit);
 
 	return (0);
 }
