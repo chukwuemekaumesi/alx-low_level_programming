@@ -15,9 +15,7 @@ int main(void)
 	for (n = 0; n < 16; n++)
 	{
 		putchar(hex_digits[n]);
-		putchar('\n');
+		
 	}
-
-	
 	return (0);
 }
