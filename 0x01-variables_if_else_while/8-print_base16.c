@@ -8,7 +8,8 @@
 
 int main(void)
 {
-	for (int n = 0; n < 16; n++)
+	int n;
+	for (n = 0; n < 16; n++)
 	{
 		putchar(n % 16 + '0');
 	}
