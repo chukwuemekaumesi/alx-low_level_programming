@@ -1,1 +1,1 @@
-The main readme file
+The while variable in C programming
