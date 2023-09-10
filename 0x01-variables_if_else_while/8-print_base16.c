@@ -9,9 +9,11 @@
 int main(void)
 {
 	int n;
+
+	char hex_digits[] = "123456789abcdef";
 	for (n = 0; n < 16; n++)
 	{
-		putchar(n % 16 + '0');
+		putchar(hex_digits[n]);
 	}
 
 	putchar('\n');
