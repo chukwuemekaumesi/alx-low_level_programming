@@ -1,7 +1,9 @@
 #include "main.h"
+
 /**
- * Print alphebets ten times 
- * Return - Alwasy 0
+ * print_alphabet_x10 - Prints the alphabet 10 times
+ *
+ * Return: Always 0 (Success)
  */
 
 void print_alphabet_x10(void)
@@ -12,7 +14,7 @@ void print_alphabet_x10(void)
 	{
 		char  x;
 
-		for (x = 'a'; x < 'z'; x++)
+		for (x = 'a'; x <= 'z'; x++)
 		{
 			_putchar(x);
 		}
