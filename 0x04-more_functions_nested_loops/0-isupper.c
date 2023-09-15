@@ -4,12 +4,12 @@
  * _isupper - check if C is in uppercase
  * @c: character in the program
  *
- * Return: 1
+ * Return: 0 0r 1
  */
 
 int _isupper(int c)
 {
-	if (c >= 67 && c <= 90)
+	if (c >= 'A' && c <= 'Z')
 	{
 		return (1);
 	}
