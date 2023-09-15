@@ -2,7 +2,7 @@
 
 /**
  * _isupper - check if C is in uppercase
- * @c:  character in the program
+ * @c: character in the program
  *
  * Return: 1
  */
