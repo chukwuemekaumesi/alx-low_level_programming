@@ -1,8 +1,11 @@
 #include "main.h"
 /**
- * reset_to_98 - To write pointers 
- * @*n: the pointer variable i will be working with
- * Return: It will return 0 since the function is an integer
+ * reset_to_98 - this program resets the value of an int
+ * to 98
+ *
+ * @n: the value of a deferring pointer
+ *
+ * Return: nth
  */
 void reset_to_98(int *n)
 {
