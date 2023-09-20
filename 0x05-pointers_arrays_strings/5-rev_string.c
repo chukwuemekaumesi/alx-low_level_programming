@@ -3,7 +3,7 @@
 /**
  * rev_string - take the string and reverse it
  *
- * @s: take the string that should be reversed 
+ * @s: take the string that should be reversed
  *
  * Return: returning nothing because it is a void function
  *
