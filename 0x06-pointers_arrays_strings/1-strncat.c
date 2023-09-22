@@ -1,15 +1,12 @@
 #include "main.h"
-
 /**
  * _strncat - Takes in two strings
  * using at most two a byte
  *
- * @dest: the argument that stores 
+ * @dest: the argument that stores
  * the concatenated strings
- *
  * @src: the strings used
- *
- * @n: number of owrds
+ * @n: number of words
  * Return: dest
  */
 
