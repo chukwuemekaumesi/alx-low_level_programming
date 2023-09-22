@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
- * _strncat - concatenates two strings
+ * _strncat - Takes in two strings
+ * using at most two a byte
  *
  * @dest: the argument that stores the concatenated strings
  *
  * @src: the strings used
  *
  * @n: the number of strings that will be used
- *
- * Return: It returns the dest argument
+ * Return: dest
  */
 
-char *_strcat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int i;
 
