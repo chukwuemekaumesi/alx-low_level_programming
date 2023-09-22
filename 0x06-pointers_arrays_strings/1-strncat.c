@@ -4,11 +4,12 @@
  * _strncat - Takes in two strings
  * using at most two a byte
  *
- * @dest: the argument that stores the concatenated strings
+ * @dest: the argument that stores 
+ * the concatenated strings
  *
  * @src: the strings used
  *
- * @n: the number of strings that will be used
+ * @n: number of owrds
  * Return: dest
  */
 
