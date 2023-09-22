@@ -14,23 +14,37 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int i;
+    int i;
 
-	int j;
+    int j;
 
-	i = 0;
-	while (dest != '\0')
-	{
-		i++;
-	}
+    int dest_len;
 
-	j = 0;
-	while (src != '\0')
-	{
-		dest[i] = src[j];
-		i++;
-		j++;
-	}
-	dest[i] = '\0';
-	return (dest);
+    i = 0;
+    while (dest[i] != '\0')
+    {
+        i++;
+    }
+
+    dest_len = i;
+
+    j = 0;
+    while (src[j] != '\0' && j < n)
+    {
+        dest[i] = src[j];
+        i++;
+        j++;
+    }
+
+    if (j == n)
+    {
+        dest[i] = '\0';
+    }
+    else
+    {
+        // The destination string does not have enough space.
+        // Handle this error condition here.
+    }
+
+    return (dest);
 }
