@@ -1,13 +1,14 @@
 #include "main.h"
 
 /**
- * _strcat - concatanetae two strings 
+ * _strcat - concatanetae two strings
  *
- * @dest: one of the arguments that takes in strings and is returned after the null 
- * byte at the end is over written 
- * @src: another argument that is concantenated to dest 
+ * @dest: one of the arguments that takes in strings
+ * and is returned after the null
+ * byte at the end is over written
+ * @src: another argument that is concantenated to dest
  *
- * Return: Return the value of dest as it is overwriotten by the concantenated string
+ * Return: Return the value of dest as it is in the string
  */
 
 char *_strcat(char *dest, char *src)
@@ -21,7 +22,6 @@ char *_strcat(char *dest, char *src)
 	{
 		i++;
 	}
-
 	j = 0;
 	while (src[j] != '\0')
 	{
@@ -29,7 +29,6 @@ char *_strcat(char *dest, char *src)
 		i++;
 		j++;
 	}
-
 	dest[i] = '\0';
 	return (dest);
 
