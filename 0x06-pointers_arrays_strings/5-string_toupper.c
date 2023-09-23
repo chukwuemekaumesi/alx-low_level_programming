@@ -2,11 +2,11 @@
 
 /**
  * string_toupper - changes lowercase to upper
- * @*: the pointer takes in character
+ * @n: the pointer takes in character
  * Return: uppercase
  */
 
-char *string_toupper(char *)
+char *string_toupper(char *n)
 {
 	int i;
 
@@ -20,6 +20,6 @@ char *string_toupper(char *)
 			i++;
 		}
 	}
-	return(n);
+	return (n);
 
 }
