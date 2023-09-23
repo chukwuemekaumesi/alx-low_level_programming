@@ -7,8 +7,7 @@
  */
 
 char *leet(char *str)
-{
-	int i, j;
+{	int i, j;
 
 	char c[] = "aAeEoOtTlL";
 
@@ -16,7 +15,7 @@ char *leet(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (j = 0; str[j] != '\0'; j++)
+		for (j = 0; c[j] != '\0'; j++)
 		{
 			if (str[i] == c[j])
 			{
