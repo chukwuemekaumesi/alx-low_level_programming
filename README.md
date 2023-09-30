@@ -1,1 +1,1 @@
-The directory for nested loops and functions
+the pointers project
