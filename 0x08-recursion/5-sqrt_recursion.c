@@ -1,39 +1,35 @@
 #include "main.h"i
 
 /**
- * _sqrt_recursion - gives me the square of a number
- * @n: the integer collected
- * Return: the squareroot of n
+ * sqr_a - checks for squareroot
+ * @a: first integer
+ * @b: second integer
+ * Return: squareroot or -1
+ */
+
+int sqr_a(int a, int b)
+{
+	if (b * b == a)
+	{
+		return (b);
+	}
+	else if (b * b > 4)
+	{
+		return (-1);
+	}
+	else
+	{
+		return (sqr_a(a, b + 1));
+	}
+}
+
+/**
+ * _sqrt_recursion - the squareroot returned
+ * @n: main integer
+ * Return: returns the squareroot
  */
 
 int _sqrt_recursion(int n)
 {
-	int square_root(int p, int q);
-
-	int q = 1;
-	return (square_root(n, q));
-}
-
-/**
- * square_root - checks if a number has natural
- * suqare root
- * @q: the interator
- * @p: the integer taken
- * Return: the square
- */
-
-int square_root(int p, int q)
-{
-	if (q * q == p)
-	{
-		return (q);
-	}
-	else if (q < p)
-	{
-		square_root(p, ++q);
-	}
-	else
-	{
-		return (-1);
-	}
+	return (sqr_a(n, 0));
 }
