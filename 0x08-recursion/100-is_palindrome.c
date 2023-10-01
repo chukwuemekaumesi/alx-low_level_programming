@@ -14,7 +14,7 @@ int strnlen_1(char *t)
 	}
 	else
 	{
-		return (1 + strnlen(t + 1));
+		return (1 + strnlen_1(t + 1));
 	}
 }
 
@@ -58,6 +58,6 @@ int is_palindrome(char *s)
 	}
 	else
 	{
-		return (compare_str(s, 0, strnlen(t - 1)));
+		return (compare_str(s, 0, strnlen_1(t - 1)));
 	}
 }
