@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * strnlen - gives us string length
+ * strnlen_1 - gives us string length
  * @s: takes in string
  * Return: return string length
  */
 
 int strnlen_1(char *s)
 {
-	if (*s != '\0')
+	if (*s == '\0')
 	{
 		return (0);
 	}
@@ -24,20 +24,20 @@ int strnlen_1(char *s)
 /**
  * compare_str - compare string characters
  * @s: the string
- * @a: first compare
- * @b: second compare
+ * @left: first compare
+ * @right: second compare
  * Return: int
  */
 
-int compare_str(char *s, int a, int b)
+int compare_str(char *s, int left, int right)
 {
-	if (*(s + a) == *(s + b))
+	if (*(s + left) == *(s + right))
 	{
-		if (a == b || a == b + 1)
+		if (left == right || left == right + 1)
 		{
 			return (1);
 		}
-		return (0 + compare_str(s, a + 1, b - 1));
+		return (0 + compare_str(s, left + 1, right - 1));
 	}
 	return (0);
 }
