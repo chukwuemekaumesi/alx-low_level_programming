@@ -1,4 +1,4 @@
-#include "main.h"i
+#include "main.h"
 
 /**
  * sqr_a - checks for squareroot
