@@ -6,15 +6,15 @@
  * Return: return string length
  */
 
-int strnlen_1(char *t)
+int strnlen_1(char *s)
 {
-	if (*t != '\0')
+	if (*s != '\0')
 	{
 		return (0);
 	}
 	else
 	{
-		return (1 + strnlen_1(t + 1));
+		return (1 + strnlen_1(s + 1));
 	}
 }
 
@@ -58,6 +58,6 @@ int is_palindrome(char *s)
 	}
 	else
 	{
-		return (compare_str(s, 0, strnlen_1(t) - 1));
+		return (compare_str(s, 0, strnlen_1(s) - 1));
 	}
 }
