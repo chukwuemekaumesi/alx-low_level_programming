@@ -13,6 +13,6 @@ int sqr_a(int a, int b);
 int is_prime_number(int n);
 int is_palindrome(char *s);
 int compare_str(char *s, int a, int b);
-int strnlen(char *s);
+int strnlen_1(char *t);
 
 #endif
