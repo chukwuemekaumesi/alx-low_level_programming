@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define ALL_PROTOTYPES_H
+#ifndef _MAIN_H
+#define _ALL_H
 
 int _putchar(char c);
 int _islower(int c);
