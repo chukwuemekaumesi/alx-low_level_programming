@@ -4,7 +4,7 @@
 /**
  * alloc_grid - two dimmensional array
  * @width: first int
- * @length: second integer
+ * @height: second integer
  * Return: 0 or null
  */
 
