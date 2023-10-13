@@ -6,12 +6,11 @@
  */
 void print_all(const char * const format, ...)
 {
-	int i, chec_stat;
+	int i = 0, chec_stat;
 	char *str;
 	va_list formatted;
 
 	va_start(formatted, format);
-	i = 0;
 	while (format != NULL && format[i] != '\0')
 	{
 		switch (format[i])
@@ -33,6 +32,7 @@ void print_all(const char * const format, ...)
 				if (str == NULL)
 					str = "(nil)";
 				printf("%s", str);
+				chec_stat = 0;
 				break;
 			default:
 				chec_stat = 1;
