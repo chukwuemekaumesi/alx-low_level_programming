@@ -1,7 +1,6 @@
 #include "lists.h"
-#include <stdlib.h>
 
-/**
+/**i
  * add_nodeint - add a node at the beginning
  * @head: the head of the node
  * @n: the integer that will be passed
@@ -11,31 +10,18 @@
 listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *new;
-	listint_t *temporary;
 
-	(void)temporary;
-
+	if (head == NULL)
+		return (0);
 	new = malloc(sizeof(listint_t));
 	if (new == NULL)
 		return (NULL);
-	new->n = n;
-	new->next = NULL;
-	temporary = *head;
-
 	if (*head == NULL)
-	{
-		*head = new;
-	}
+		new->next = NULL;
 	else
-	{
-		while (temporary->next != NULL)
-		{
-			temporary = temporary->next;
-		}
-		temporary->next = new;
-	}
+		new->next = *head;
+	new->n = n;
+	*head = new;
 
-	return (*head);
-
-
+	return (0);
 }
