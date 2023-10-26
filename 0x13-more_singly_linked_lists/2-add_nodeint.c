@@ -1,6 +1,6 @@
 #include "lists.h"
 
-/**i
+/**
  * add_nodeint - add a node at the beginning
  * @head: the head of the node
  * @n: the integer that will be passed
