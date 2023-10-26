@@ -3,7 +3,7 @@
 /**
  * pop_listint - delete a list
  * @head: pointer to the list
- * Retur: it returns integer
+ * Return: it returns integer
  */
 
 
