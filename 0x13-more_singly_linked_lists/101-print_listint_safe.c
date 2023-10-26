@@ -6,10 +6,11 @@
  * Return: returns nothing
  */
 
-void free_list(listp_t **head)
+void free_list(listp_t**head)
 {
 	listp_t *temp;
 	listp_t *current;
+
 	if (head != NULL)
 	{
 		current = *head;
@@ -31,7 +32,6 @@ size_t print_listint_safe(const listint_t *head)
 {
 	unsigned int nodes = 0;
 	listp_t *hptr, *name, *add, *new;
-	
 	hptr = NULL;
 
 	while (head != NULL)
@@ -41,6 +41,7 @@ size_t print_listint_safe(const listint_t *head)
 		if (new == NULL)
 			exit (98);
 		new->p = (void *)head;
+		
 		new->next = hptr;
 		hptr = new;
 		add = hptr;
