@@ -7,7 +7,6 @@
  * @file_from: the file where the contyent is coming from
  * @file_to: the destination file
  * @argv: the argument vector
- * Return: no retrun
  */
 
 void error_handler(int file_from, int file_to, char *argv[])
@@ -19,7 +18,7 @@ void error_handler(int file_from, int file_to, char *argv[])
 	}
 	if (file_to == -1)
 	{
-		dprintf(STDERR_FILENO, " Error: Can't write to %s\n", argv[2]);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
 
@@ -35,7 +34,7 @@ int main(int argc, char *argv[])
 {
 	int file_from, file_to, error_close;
 	ssize_t n, rwr;
-	char *buffer[1024];
+	char buffer[1024];
 
 	if (argc != 3)
 	{
@@ -52,7 +51,7 @@ int main(int argc, char *argv[])
 		n = read(file_from, buffer, 1024);
 		if (n == -1)
 			error_handler(-1, 0, argv);
-		rwr = write(file_to, buffer, 1024);
+		rwr = write(file_to, buffer, n);
 		if (rwr == -1)
 			error_handler(0, -1, argv);
 	}
