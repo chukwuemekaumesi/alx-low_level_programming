@@ -30,6 +30,7 @@ void error_handler(int file_from, int file_to, char *argv[])
  * @argv: argument vector
  * Return: return 0 if successful
  */
+
 int main(int argc, char *argv[])
 {
 	int file_from, file_to, error_close;
@@ -55,7 +56,6 @@ int main(int argc, char *argv[])
 		if (rwr == -1)
 			error_handler(0, -1, argv);
 	}
-
 	error_close = close(file_from);
 
 	if (error_close == -1)
